@@ -8,7 +8,7 @@ from evaluate_track1_utils import get_bleu, get_chrf # metrics
 from evaluate_track1_utils import get_shared_task_dict, get_shared_task_src, get_shared_task_ref, get_participant_hyp # read utils
 import nltk
 # nltk.download('punkt_tab')
-from script_track1 import run_cycle
+from consistency_script_track1 import run_cycle
 
 VERBOSE=True
 if VERBOSE:

@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
         for team in stats_dict:
             for pseudoref_choice in mapping_dict:
-                score_dict[args.tgtlang][args.mode][team][mapping_dict[pseudoref_choice]]['macro'] = stats_dict[f"{team}/{team}"][pseudoref_choice]['macro']
+                score_dict[args.tgtlang][args.mode][team.split("/")[-1]][mapping_dict[pseudoref_choice]]['macro'] = stats_dict[team][pseudoref_choice]['macro']
                 # score_dict[args.tgtlang][args.mode][team][mapping_dict[pseudoref_choice]]['macro'] = stats_dict[team][pseudoref_choice]['micro']
 
         json.dump(score_dict, open("scores/track1_score_dict_full.json", "w"))
