@@ -1,3 +1,4 @@
-generated/
+wmt25-terminology/generated/
 *.pyc
 __pycache__
+checkpoints/
